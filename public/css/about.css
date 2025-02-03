@@ -1,0 +1,256 @@
+@import 'variables.css';
+@import 'animations.css';
+
+/* Main Layout */
+.about-main {
+    padding-top: var(--spacing-xl);
+    background: var(--bg-light);
+}
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                url('../images/islamic-pattern.jpg');
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-green);
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: var(--text-medium);
+    animation: fadeInUp 1s ease 0.2s;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--gradient-light);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.stat-card {
+    background: var(--bg-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-accent);
+    transform: scaleX(0);
+    transition: var(--transition-fast);
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-card:hover::before {
+    transform: scaleX(1);
+}
+
+.stat-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-light);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    transition: var(--transition-fast);
+}
+
+.stat-card:hover .stat-icon {
+    background: var(--gradient-accent);
+}
+
+.stat-icon i {
+    font-size: 30px;
+    color: var(--primary-green);
+    transition: var(--transition-fast);
+}
+
+.stat-card:hover .stat-icon i {
+    color: var(--bg-white);
+}
+
+/* Mission & Goals Section */
+.mission-goals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.mission-box,
+.goals-box {
+    background: var(--bg-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-box:hover,
+.goals-box:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.mission-points,
+.goals-points {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-lg);
+}
+
+.mission-points li,
+.goals-points li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--gradient-light);
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+}
+
+.mission-points li:hover,
+.goals-points li:hover {
+    transform: translateX(10px);
+    background: var(--gradient-light);
+}
+
+.mission-points i,
+.goals-points i {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+.services-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-white);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: var(--spacing-lg) auto 0;
+    padding: 0 var(--spacing-md);
+}
+
+.service-card {
+    background: var(--bg-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-light);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    transition: var(--transition-fast);
+}
+
+.service-card:hover .service-icon {
+    background: var(--gradient-accent);
+}
+
+.service-icon i {
+    font-size: 30px;
+    color: var(--primary-green);
+    transition: var(--transition-fast);
+}
+
+.service-card:hover .service-icon i {
+    color: var(--bg-white);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .stats-grid,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .mission-goals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card,
+    .service-card {
+        padding: var(--spacing-md);
+    }
+} 

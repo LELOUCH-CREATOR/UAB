@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Umu Aymen Bereka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo">
+                    <img src="pics/um.jpg" alt="Umu Aymen Bereka Logo">
+                    <h1>Umu Aymen<span>Bereka</span></h1>
+                </div>
+            </a>
+
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                 <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#welcome">Welcome</a></li>
+                        <li><a href="index.html#news">Latest News</a></li>
+                        <li><a href="index.html#events">Events</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">
+                        <i class="fas fa-puzzle-piece"></i>
+                        Services
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#daycare">Daycare</a></li>
+                        <li><a href="services.html#preschool">Preschool</a></li>
+                        <li><a href="services.html#activities">Activities</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-book-open"></i>
+                        About
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#story">Our Story</a></li>
+                        <li><a href="about.html#team">Our Team</a></li>
+                        <li><a href="about.html#features">Facilities</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#form">Send Message</a></li>
+                        <li><a href="#info">Contact Info</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">
+                        <i class="fas fa-user"></i>
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-section">
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>We'd Love to Hear from You</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info-grid">
+                <div class="info-box">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Our Location</h3>
+                        <p>Addis Ababa, Ethiopia<br>Bole Sub-city</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p>+251 911 234 567<br>+251 911 234 568</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p>info@umuaymen.com<br>support@umuaymen.com</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Working Hours</h3>
+                        <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container" id="form">
+                <h2>Send us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Your Phone</label>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="form-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-container" id="location">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d985.1579988387576!2d38.6946409!3d9.0059687!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d9.0061667!2d38.69525!5e0!3m2!1sen!2set!4v1733892295085!5m2!1sen!2set" width="90%" height="450" style="border:0; border-radius=30px"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education Street</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@umuaymen.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Umu Aymen Bereka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html> 

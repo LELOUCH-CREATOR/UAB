@@ -1,0 +1,948 @@
+.about-main {
+    padding-top: 80px;
+    background: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.about-hero {
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                url('../images/islamic-pattern.jpg');
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    color: #333;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+    text-shadow: none;
+    color: #4CAF50;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s;
+    color: #666;
+}
+
+.hero-decoration {
+    font-size: 4rem;
+    color: rgba(76, 175, 80, 0.2);
+    margin-top: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.journey-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-header::after {
+    content: '☪';
+    display: block;
+    font-size: 2rem;
+    color: #FF9A9E;
+    margin-top: 10px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+}
+
+.islamic-pattern {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    margin: 20px auto;
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4CAF50, #8BC34A);
+    top: 0;
+}
+
+.timeline-item {
+    margin-bottom: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 4px #4CAF50;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.timeline-icon:hover {
+    transform: scale(1.1);
+}
+
+.timeline-icon i {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.timeline-content {
+    width: calc(50% - 50px);
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.mission-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mission-box i {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.mission-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #007bff;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-member p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .story-section {
+        grid-template-columns: 1fr;
+    }
+
+    .story-text {
+        order: 2;
+    }
+
+    .story-image {
+        order: 1;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 60px 0;
+    }
+
+    .about-hero h1 {
+        font-size: 2em;
+    }
+
+    .mission-box {
+        padding: 20px;
+    }
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, rgba(76,175,80,0.1), rgba(139,195,74,0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    background: linear-gradient(45deg, #4CAF50, #8BC34A);
+}
+
+.feature-icon i {
+    font-size: 35px;
+    color: #4CAF50;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon i {
+    color: white;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Values Section */
+.values-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.value-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.value-card i {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover i {
+    transform: scale(1.1);
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Mission Vision Section */
+.mission-vision-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.mission-box,
+.vision-box {
+    padding: 40px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.mission-box:hover,
+.vision-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.mission-points,
+.vision-points {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.mission-points li,
+.vision-points li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    background: rgba(76,175,80,0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mission-points li:hover,
+.vision-points li:hover {
+    transform: translateX(10px);
+    background: rgba(76,175,80,0.15);
+}
+
+.mission-points i,
+.vision-points i {
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .features-grid,
+    .values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card,
+    .value-card {
+        padding: 25px;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .feature-icon i {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-card h3,
+    .value-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .mission-points li,
+    .vision-points li {
+        padding: 10px;
+    }
+}
+
+/* Stats Counter Animation */
+.counter {
+    display: inline-block;
+    animation: countUp 2s ease-out forwards;
+}
+
+@keyframes countUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Islamic Pattern Decoration */
+.islamic-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../images/pattern.png');
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* Section Headers with Islamic Style */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-header::after {
+    content: '☪';
+    display: block;
+    font-size: 2rem;
+    color: #FF9A9E;
+    margin-top: 10px;
+}
+
+/* Enhanced Card Styles */
+.stat-card,
+.service-card {
+    border: 1px solid rgba(255,154,158,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Islamic-themed Gradients */
+.gradient-bg {
+    background: linear-gradient(45deg, 
+        rgba(255,154,158,0.2),
+        rgba(255,230,109,0.2)
+    );
+}
+
+/* Section Spacing */
+section {
+    position: relative;
+    z-index: 1;
+    margin: 40px 0;
+}
+
+section:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #FF9A9E, #FFE66D);
+}
+
+/* Additional Hover Effects */
+.service-card::before,
+.mission-box::before,
+.goals-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        rgba(255,154,158,0.1),
+        rgba(255,230,109,0.1)
+    );
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover::before,
+.mission-box:hover::before,
+.goals-box:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Enhanced Icons */
+.icon-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.icon-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle,
+        rgba(255,154,158,0.2) 0%,
+        transparent 70%
+    );
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: scale(0.8);
+}
+
+.icon-wrapper:hover::after {
+    transform: scale(1.2);
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.15);
+}
+
+.stat-icon {
+    font-size: 3em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.stat-card h3 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.stat-card p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Mission & Goals Section */
+.mission-goals-section {
+    padding: 80px 20px;
+    background: white;
+}
+
+.mission-goals-grid {
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-box, .goals-box {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-box::before, .goals-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #4CAF50;
+}
+
+.mission-box h2, .goals-box h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.mission-box h2::after, .goals-box h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+}
+
+.mission-points, .goals-points {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-points li, .goals-points li {
+    margin: 20px 0;
+    padding-left: 35px;
+    position: relative;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+}
+
+.mission-points li i, .goals-points li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #4CAF50;
+    font-size: 1.2em;
+}
+
+/* Featured Programs Section */
+.featured-programs {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.featured-programs h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.2em;
+    color: #333;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.featured-programs h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.15);
+}
+
+.service-icon {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.program-card h3 {
+    margin: 15px 0;
+    color: #333;
+    font-size: 1.3em;
+}
+
+.program-card p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .programs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mission-goals-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mission-box, .goals-box {
+        width: 100%;
+    }
+
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-main {
+        padding-top: 60px;
+    }
+
+    .stats-section,
+    .mission-goals-section,
+    .featured-programs {
+        padding: 40px 15px;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .stat-icon {
+        font-size: 2.2em;
+    }
+
+    .stat-card h3 {
+        font-size: 2em;
+    }
+
+    .mission-box, .goals-box {
+        padding: 30px 20px;
+    }
+
+    .mission-box h2, .goals-box h2 {
+        font-size: 1.8em;
+    }
+
+    .program-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card h3 {
+        font-size: 1.8em;
+    }
+
+    .mission-points li, .goals-points li {
+        font-size: 0.95em;
+        padding-left: 25px;
+    }
+
+    .featured-programs h2 {
+        font-size: 1.8em;
+    }
+
+    .program-card {
+        padding: 15px;
+    }
+
+    .service-icon {
+        font-size: 2em;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stat-card, .program-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.stat-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.stat-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Replace blue colors with green */
+.stat-icon {
+    font-size: 3em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.mission-points li i, .goals-points li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #4CAF50;
+    font-size: 1.2em;
+}
+
+.featured-programs h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+}
+
+.service-icon {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Update hover effects to use green gradient */
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.15);
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.15);
+}
+
+/* Update link hover colors */
+.nav-link:hover {
+    color: #4CAF50;
+}
+
+/* Update box shadows to use green tint */
+.stat-card {
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.1);
+}
+
+.program-card {
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.1);
+} 

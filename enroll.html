@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll - Umu Aymen Bereka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="form-page">
+    <div class="form-wrapper enrollment-form">
+        <h2>Student Enrollment</h2>
+        <a href="index.html" class="back-btn" title="Go back" aria-label="Go back to home page">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <form id="enrollmentForm">
+            <!-- Student Information -->
+            <div class="form-section">
+                <h3>Student Information</h3>
+                <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Student's Full Name" required>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-calendar"></i>
+                    <input type="date" placeholder="Date of Birth" required>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-venus-mars"></i>
+                    <select required name="gender" id="gender" aria-label="Gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Parent/Guardian Information -->
+            <div class="form-section">
+                <h3>Parent/Guardian Information</h3>
+                <div class="input-box">
+                    <i class="fas fa-user-tie"></i>
+                    <input type="text" placeholder="Parent/Guardian Name" required>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-home"></i>
+                    <input type="text" placeholder="Home Address" required>
+                </div>
+            </div>
+
+            <!-- Program Selection -->
+            <div class="form-section">
+                <h3>Program Selection</h3>
+                <div class="input-box">
+                    <i class="fas fa-book"></i>
+                    <select required name="program" id="program" aria-label="Program">
+                        <option value="">Select Program</option>
+                        <option value="toddler">Toddler Program (2-3 years)</option>
+                        <option value="preschool">Preschool (3-4 years)</option>
+                        <option value="kindergarten">Kindergarten (4-5 years)</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-clock"></i>
+                    <select required name="schedule" id="schedule" aria-label="Schedule">
+                        <option value="">Select Schedule</option>
+                        <option value="full">Full Day</option>
+                        <option value="morning">Morning Session</option>
+                        <option value="afternoon">Afternoon Session</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-section">
+                <h3>Additional Information</h3>
+                <div class="input-box">
+                    <i class="fas fa-notes-medical"></i>
+                    <textarea placeholder="Medical Conditions/Allergies (if any)"></textarea>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-comment"></i>
+                    <textarea placeholder="Additional Comments"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <span class="checkbox-text">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></span>
+                </label>
+                <div class="error-message" id="termsError"></div>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <span class="checkbox-text">Subscribe to our newsletter for updates</span>
+                </label>
+            </div>
+
+            <button type="submit" class="form-btn">Submit Enrollment</button>
+        </form>
+    </div>
+    <script src="enroll.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html> 

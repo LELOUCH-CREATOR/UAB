@@ -1,0 +1,45 @@
+:root {
+    /* Primary Colors - Islamic Theme */
+    --primary-green: #4CAF50;
+    --secondary-green: #8BC34A;
+    --accent-gold: #FFD700;
+    --accent-pink: #FF9A9E;
+    --accent-yellow: #FFE66D;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(45deg, var(--primary-green), var(--secondary-green));
+    --gradient-accent: linear-gradient(45deg, var(--accent-pink), var(--accent-yellow));
+    --gradient-light: linear-gradient(45deg, rgba(76,175,80,0.1), rgba(139,195,74,0.1));
+    
+    /* Text Colors */
+    --text-dark: #333;
+    --text-medium: #666;
+    --text-light: #999;
+    
+    /* Background Colors */
+    --bg-light: #f8f9fa;
+    --bg-white: #fff;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 5px rgba(0,0,0,0.05);
+    --shadow-md: 0 5px 15px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 25px rgba(0,0,0,0.15);
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Border Radius */
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 15px;
+    --radius-full: 50%;
+
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+    --transition-slow: 0.8s ease;
+} 

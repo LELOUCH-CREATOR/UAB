@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Umu Aymen Bereka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body class="form-page">
+    <nav class="navbar">
+        <a href="index.html" style="text-decoration: none;">
+            <div class="logo">
+                <img src="pics/um.jpg" alt="Umu Aymen Bereka Logo">
+                <h1>Umu Aymen<span>Bereka</span></h1>
+            </div>
+        </a>
+        <div class="navbar-right">
+            <!-- Profile section will be dynamically added here by JavaScript -->
+        </div>
+    </nav>
+
+    <div class="form-wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <a href="index.html" class="back-btn" title="Go back" aria-label="Go back to home page">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <form action="#" id="loginForm">
+                <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="loginEmail" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                    <a href="#" style="color: #FF9A9E; margin-top: 30px;">Forgot password?</a>
+                </div>
+                <button type="submit" class="form-btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html> 
